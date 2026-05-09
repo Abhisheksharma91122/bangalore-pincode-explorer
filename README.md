@@ -1,17 +1,20 @@
-# Bangalore Pincode Explorer
+# Bangalore Pincode Explorer 📍
 
-A full-stack web application to search and explore pincodes in Bangalore. Built with a modern tech stack and premium UI design.
+A lightning-fast, full-stack web application to search and explore pincodes in Bangalore. Built with a modern tech stack and designed with a premium, mobile-first UI. 
 
-## Features
-- **Instant Search**: Search by area name or exact pincode.
-- **Premium UI**: Glassmorphism, animations with Framer Motion, Dark/Light mode.
-- **Map Integration**: OpenStreetMap linking.
-- **Copy & Share**: Easily share pincode details.
-- **Responsive**: Mobile-first design.
+This project integrates the live **India Post API** as its primary data source, utilizing smart in-memory caching and background MongoDB population to ensure searches are instant and resilient.
 
-## Tech Stack
-- **Frontend**: Next.js (App Router), Tailwind CSS, Framer Motion, Axios, Lucide React.
-- **Backend**: Node.js, Express.js, MongoDB Atlas (Mongoose).
+## ✨ Key Features
+- **Live Data & Smart Caching**: Connects directly to the India Post API with an intelligent fallback cascade (Cache -> MongoDB -> Live API).
+- **Instant Search**: Features debounced inputs, autocomplete history dropdowns, and trending searches.
+- **Premium UI**: Glassmorphism elements, Framer Motion animations, loading skeletons, and seamless system-aware Dark/Light mode utilizing `next-themes` and Tailwind CSS v4.
+- **Map Integration**: OpenStreetMap linking for precise location viewing.
+- **Copy & Share**: Easily copy pincodes to your clipboard or share locations.
+- **Robust Backend**: Node/Express server protected by Helmet, CORS, and rate-limiting.
+
+## 🛠️ Tech Stack
+- **Frontend**: Next.js (App Router), Tailwind CSS v4, Framer Motion, Axios, next-themes.
+- **Backend**: Node.js, Express.js, MongoDB Atlas (Mongoose), node-cache, axios-retry.
 
 ## Local Development
 
